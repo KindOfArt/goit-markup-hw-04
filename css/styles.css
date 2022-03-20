@@ -72,56 +72,6 @@ p {
 
 /* buttons */
 
-.hero-btn {
-	font-family: "Roboto", sans-serif;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 1.87;
-	letter-spacing: 0.06em;
-	text-align: inherit;
-
-	color: var(--basic-white);
-	background-color: var(--accent-color);
-
-	display: inline-block;
-	padding: 10px 32px;
-	border-style: none;
-	border-radius: 4px;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-	cursor: pointer;
-}
-
-.hero-btn:hover,
-.hero-btn:focus {
-	background-color: var(--hero-btn-accent);
-}
-
-.filter-btn {
-	font-family: "Roboto", sans-serif;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.62;
-	text-align: center;
-	letter-spacing: 0.03em;
-
-	color: var(--main-text-color);
-	background-color: var(--bg-our-team);
-
-	display: inline-block;
-	padding: 6px 22px;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-}
-
-.filter-btn:hover,
-.filter-btn:focus {
-	color: var(--basic-white);
-	background-color: var(--accent-color);
-	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
 /* заголовки */
 
 .title {
@@ -252,7 +202,6 @@ p {
 	height: 600px;
 	margin-left: auto;
 	margin-right: auto;
-	outline: 1px solid black;
 	background-image: linear-gradient(to right, var(--hero-gradient), var(--hero-gradient)), url(../images/hero-photo.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -276,6 +225,31 @@ p {
 	color: var(--basic-white);
 
 	margin-bottom: 30px;
+}
+
+.hero-btn {
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.87;
+	letter-spacing: 0.06em;
+	text-align: inherit;
+
+	color: var(--basic-white);
+	background-color: var(--accent-color);
+
+	display: inline-block;
+	padding: 10px 32px;
+	border-style: none;
+	border-radius: 4px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+	cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+	background-color: var(--hero-btn-accent);
 }
 
 /* features */
@@ -411,6 +385,31 @@ p {
 
 .filter-item:not(:last-child) {
 	margin-right: 8px;
+}
+
+.filter-btn {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.62;
+	text-align: center;
+	letter-spacing: 0.03em;
+
+	color: var(--main-text-color);
+	background-color: var(--bg-our-team);
+
+	display: inline-block;
+	padding: 6px 22px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+	color: var(--basic-white);
+	background-color: var(--accent-color);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* portfolio cards */
