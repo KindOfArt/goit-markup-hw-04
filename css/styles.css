@@ -395,6 +395,36 @@ p {
 	fill: var(--basic-white);
 }
 
+/* clients */
+
+.clients-link-list {
+	display: flex;
+}
+
+.clients-link-item {
+	padding: 16px 32px;
+	border: 1px solid #afb1b8;
+	border-radius: 4px;
+}
+
+.clients-link-item:not(:last-child) {
+	margin-right: 30px;
+}
+
+.clients-link {
+	display: block;
+}
+
+.clients-icons {
+	display: block;
+	fill: var(--icons-unactive);
+}
+
+.clients-link:hover .clients-icons,
+.clients-link:focus .clients-icons {
+	fill: var(--accent-color);
+}
+
 /* footer */
 
 .footer {
