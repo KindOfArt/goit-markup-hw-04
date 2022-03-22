@@ -358,15 +358,19 @@ p {
 	margin-bottom: 16px;
 }
 
-.team-social-item:not(:last-child) {
-	margin-right: 10px;
-}
-
 .team-social-links {
 	display: flex;
 	width: 206px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.team-social-item {
+	border-radius: 50%;
+}
+
+.team-social-item:not(:last-child) {
+	margin-right: 10px;
 }
 
 .team-social-link {
@@ -376,11 +380,10 @@ p {
 	width: 44px;
 	height: 44px;
 	padding: 12px;
-	border-radius: 50%;
 }
 
-.team-social-link:hover,
-.team-social-link:focus {
+.team-social-item:hover,
+.team-social-item:focus {
 	color: var(--second-text-color);
 	background-color: var(--accent-color);
 }
@@ -402,9 +405,7 @@ p {
 }
 
 .clients-link-item {
-	padding: 16px 32px;
-	border: 1px solid #afb1b8;
-	border-radius: 4px;
+	width: 170px;
 }
 
 .clients-link-item:not(:last-child) {
@@ -413,10 +414,19 @@ p {
 
 .clients-link {
 	display: block;
+	padding: 16px 32px;
+	border: 1px solid #afb1b8;
+	border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+	border-color: var(--accent-color);
 }
 
 .clients-icons {
 	display: block;
+	object-fit: contain;
 	fill: var(--icons-unactive);
 }
 
@@ -427,15 +437,22 @@ p {
 
 /* footer */
 
-.footer {
-	padding-top: 60px;
-	padding-bottom: 60px;
+.footer-flex-wrap {
+	display: flex;
+}
 
+.footer {
 	background-color: var(--bg-footer);
+	padding-bottom: 60px;
+}
+
+.footer-content {
+	margin-top: 60px;
+	margin-right: 70px;
 }
 
 .footer .logo {
-	display: inline-block;
+	display: block;
 	margin-bottom: 20px;
 
 	color: var(--basic-white);
@@ -461,6 +478,51 @@ p {
 
 .place {
 	color: var(--basic-white);
+}
+
+.join-us {
+	display: flex;
+	flex-direction: column;
+	margin-top: 72px;
+}
+.join-us-title {
+	font-weight: 700;
+	line-height: 1.14;
+	text-transform: uppercase;
+
+	margin-bottom: 20px;
+
+	color: var(--basic-white);
+}
+.join-us-links {
+	display: flex;
+	width: 206px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.join-us-item {
+	border-radius: 50%;
+}
+.join-us-item:not(:last-child) {
+	margin-right: 10px;
+}
+.join-us-item:nth-child(2) {
+	background-color: var(--accent-color);
+}
+.join-us-link {
+	fill: var(--basic-white);
+
+	background-color: rgba(255, 255, 255, 0.1);
+
+	display: block;
+	width: 44px;
+	height: 44px;
+	padding: 12px;
+	border-radius: 50%;
+}
+
+.join-us-link .social-icons {
+	fill: var(--basic-white);
 }
 
 /* portfolio */
