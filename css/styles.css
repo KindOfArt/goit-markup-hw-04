@@ -361,9 +361,6 @@ p {
 	margin-right: auto;
 }
 
-.team-social-item {
-}
-
 .team-social-item:not(:last-child) {
 	margin-right: 10px;
 }
