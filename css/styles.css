@@ -214,6 +214,7 @@ p {
 /* hero */
 
 .hero {
+	display: flex;
 	max-width: 1600px;
 	height: 600px;
 	margin-left: auto;
@@ -222,13 +223,8 @@ p {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-}
-
-.hero {
-	padding-top: 200px;
-	padding-bottom: 200px;
-
 	text-align: center;
+	align-items: center;
 }
 
 .hero-title {
@@ -366,7 +362,6 @@ p {
 }
 
 .team-social-item {
-	border-radius: 50%;
 }
 
 .team-social-item:not(:last-child) {
@@ -380,10 +375,11 @@ p {
 	width: 44px;
 	height: 44px;
 	padding: 12px;
+	border-radius: 50%;
 }
 
-.team-social-item:hover,
-.team-social-item:focus {
+.team-social-link:hover,
+.team-social-link:focus {
 	color: var(--second-text-color);
 	background-color: var(--accent-color);
 }
@@ -485,6 +481,7 @@ p {
 	flex-direction: column;
 	margin-top: 72px;
 }
+
 .join-us-title {
 	font-weight: 700;
 	line-height: 1.14;
@@ -494,21 +491,22 @@ p {
 
 	color: var(--basic-white);
 }
+
 .join-us-links {
 	display: flex;
 	width: 206px;
 	margin-left: auto;
 	margin-right: auto;
 }
+
 .join-us-item {
 	border-radius: 50%;
 }
+
 .join-us-item:not(:last-child) {
 	margin-right: 10px;
 }
-.join-us-item:nth-child(2) {
-	background-color: var(--accent-color);
-}
+
 .join-us-link {
 	fill: var(--basic-white);
 
@@ -523,6 +521,11 @@ p {
 
 .join-us-link .social-icons {
 	fill: var(--basic-white);
+}
+
+.join-us-link:hover,
+.join-us-link:focus {
+	background-color: var(--accent-color);
 }
 
 /* portfolio */
